@@ -1,0 +1,18 @@
+{
+  "name": "hardhat-project",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.1",
+    "hardhat": "^2.12.6"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.1",
+    "dotenv": "^16.0.3"
+  },
+  "scripts": {
+    "deploy":"npx hardhat run --network testnet scripts/deploy.ts",
+    "mint":"npx hardhat run --network testnet scripts/mint.ts",
+    "setRoyalty":"npx hardhat run --network testnet scripts/setRoyalty.ts",
+    "royaltyAndMint":"npx hardhat run --network testnet scripts/royaltyAndMint.ts"
+  }
+
+}
